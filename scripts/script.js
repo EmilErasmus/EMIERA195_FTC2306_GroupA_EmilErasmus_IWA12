@@ -33,7 +33,6 @@ const STATUS_MAP = {
 for (let i = 1; i < 4; i++) {
     const bookNumber = document.querySelector(`#book${i} .status`);
     const bookStatus = document.querySelector(`#book${i} .status`).innerText;
-    console.log(bookStatus)
     bookNumber.style.color = STATUS_MAP[bookStatus]["color"];
 
     const reserve = document.querySelector(`#book${i} .reserve`);
